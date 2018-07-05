@@ -1,3 +1,5 @@
+USE selectAlunos;
+
 CREATE TABLE alunos (
 	nome VARCHAR(100),
 	cpf CHAR(14),

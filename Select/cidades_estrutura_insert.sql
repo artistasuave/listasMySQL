@@ -1,6 +1,3 @@
-
-USE lista03;
-
 DROP TABLE IF EXISTS cidades;
 CREATE TABLE cidades (
 	estado CHAR(2),
