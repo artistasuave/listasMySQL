@@ -1,4 +1,3 @@
-USE selectAlunos;
 
 CREATE TABLE alunos (
 	nome VARCHAR(100),
