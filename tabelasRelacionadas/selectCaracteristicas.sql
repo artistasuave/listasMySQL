@@ -28,7 +28,8 @@ GROUP BY caracteristicas.nome;
 
 #IV
 SELECT
-	caracteristicas.nome 'Características da aluna Sophia',
-id_alunos WHERE id_alunos.caracteristicas= (SELECT id FROM alunos WHERE nome='Sophia');
-
+	alunos.nome 'Nome', caracteristicas.nome 'Características'
+FROM caracteristicas
+JOIN alunos ON(alunos.id=caracteristicas.id_alunos)
+WHERE alunos.nome = 'Sophia';
 
