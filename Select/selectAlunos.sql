@@ -55,5 +55,11 @@ SELECT nome, nota_1, nota_2, nota_3, nota_4, (nota_1 + nota_2 + nota_3 + nota_4)
 SELECT COUNT(nota_1) FROM alunos WHERE ((nota_1 + nota_2 + nota_3 + nota_4)/4)>7;
 
 #17
-#SELECT nome, nick FROM alunos WHERE COUNT(nick) = (SELECT COUNT(nick)=5);
+#SELECT nome, nick, COUNT(nick) 'CaracteresNick' FROM alunos WHERE COUNT(nick)=5;
+
+#18
+SELECT nome FROM alunos WHERE ((cor_preferida='ouro' || cor_preferida='amarelo-torrado') && ((nota_1 + nota_2 + nota_3 + nota_4) / 4)>6.5);
+
+#19
+SELECT nome, data_nascimento FROM alunos;
 
