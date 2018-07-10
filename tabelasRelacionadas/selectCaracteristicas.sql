@@ -33,3 +33,4 @@ FROM caracteristicas
 JOIN alunos ON(alunos.id=caracteristicas.id_alunos)
 WHERE alunos.nome = 'Sophia';
 
+
